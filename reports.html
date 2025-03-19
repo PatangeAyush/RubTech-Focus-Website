@@ -1,0 +1,238 @@
+
+
+<!doctype html>
+<html lang="en-US" ng-app="dashboardApp">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="profile" href="https://gmpg.org/xfn/11"> -->
+    <title>IRMRA - RubTech Focus Magazine</title>
+
+    <meta name="title" content="IRMRA - RubTech Focus Magazine" />
+
+    <meta name="keywords" content="IRMRA - RubTech Focus Magazine" />
+
+    <meta name="description" content="An Accredited independent Laboratory With Wide Spectrum of services in Testing, Research &amp; Development, Inspection, Training &amp; Validation in Rubber and Allied Material..." />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHYKPRDX18"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DHYKPRDX18');
+    </script>
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+
+    <meta name='robots' content='index,follow' />
+    <meta name="googlebot" content="index,follow" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="IRMRA - Polymer &amp; Rubber Research &amp; Testing Center" />
+
+    <meta property="og:description"
+          content="An Accredited independent Laboratory With Wide Spectrum of services in Testing, Research &amp; Development, Inspection, Training &amp; Validation in Rubber and Allied Material..." />
+
+    <meta property="og:url" content="https://www.rubtechfocus.com/index.html" />
+    <meta property="og:site_name" content="IRMRA Magazine" />
+    <meta property="og:image" content="https://www.rubtechfocus.com/assets/images/IRMRA-logo.png" />
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" id="siteground-optimizer-combined-css-2e0e06ff0aaf46be9d23e30e0fb057eb"
+          href="wp-content/uploads/siteground-optimizer-assets/style1.css" media="all" />
+    <meta name='robots' content='max-image-preview:large' />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="angular_scripts/Controllers/ReportsController.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="wp-includes/js/jquery/jquery.minf43b.js"></script>
+
+    <link rel="stylesheet" href="gallerys/style.css">
+
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'> -->
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> -->
+    <link rel="stylesheet" href="gallery/style.css" />
+
+    <style>
+        .img-wrapper {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+        }
+
+            .img-wrapper img {
+                width: 100%;
+                height: 250px;
+                transition: transform 0.3s ease-in-out;
+            }
+
+        .img-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            pointer-events: none; /* 👈 YEH IMPORTANT HAI */
+        }
+
+        .img-wrapper:hover .img-overlay {
+            opacity: 1;
+        }
+
+
+    </style>
+</head>
+<body ng-controller="ReportsController" class="post-template-default single single-post ...">
+    <div class="pfy-main-wrapper">
+        <div id="header-top"></div>
+        <div id="pfy_reading_progress"></div>
+        <div class="benqu-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ol class="breadcrumb-item">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="reports.html">Reports</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Report Section (Matching Event UI) -->
+        <section class="py-5 header pfy_single_post_wrapper">
+            <div class="container py-4">
+                <div class="row">
+                    <!-- Sidebar Navigation -->
+                    <div class="col-md-3">
+                        <!-- Tabs nav -->
+                        <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a ng-repeat="reportGroup in groupedReports"
+                               class="nav-link mb-3 p-3 shadow"
+                               id="v-pills-tab-{{$index}}"
+                               role="tab"
+                               aria-controls="v-pills-content-{{$index}}"
+                               ng-class="{'active': reportGroup === selectedReport}"
+                               ng-click="changeReport(reportGroup)">
+                                <span class="font-weight-bold small text-uppercase">{{ reportGroup.Title }}</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Tabs Content -->
+                    <div class="col-md-9">
+                        <div class="tab-content">
+                            <div ng-repeat="reportGroup in groupedReports"
+                                 class="tab-pane fade shadow rounded bg-white p-3"
+                                 id="v-pills-content-{{$index}}"
+                                 role="tabpanel"
+                                 ng-class="{'show active': reportGroup === selectedReport}">
+
+                                <h3 class="report-title">{{ reportGroup.Title }}</h3>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" ng-repeat="img in reportGroup.ImagePaths">
+                                        <div class="img-wrapper" style="position: relative; display: inline-block; cursor: pointer;" ng-click="openLightbox(img)">
+                                            <img ng-src="{{ img }}" class="img-responsive">
+                                            <div class="img-overlay">
+                                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 🔥 Lightbox (Popup) for Enlarged Image -->
+                    <div ng-show="lightboxVisible" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; align-items: center; justify-content: center; z-index: 1000;">
+                        <span style="position: absolute; top: 90px; right: 40px; font-size: 30px; color: white; cursor: pointer;" ng-click="closeLightbox()">✖</span>
+
+                        <!-- Left Arrow -->
+                        <span ng-click="prevImage()" style="position: absolute; left: 10%; font-size: 40px; color: white; cursor: pointer;">❮</span>
+
+                        <img ng-src="{{ selectedImage }}" style="width: 50%; height: auto; border-radius: 10px;">
+
+                        <!-- Right Arrow -->
+                        <span ng-click="nextImage()" style="position: absolute; right: 10%; font-size: 40px; color: white; cursor: pointer;">❯</span>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- footer__section__start -->
+    <div id="footer-top"></div>
+    <!-- footer__section__end -->
+
+    <div class="back-top-btn">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+
+
+    <script src="assets/js/jquery.js"></script>
+
+    <script src="wp-content/themes/benqu/assets/js/owl.carousel.min8a54.js"></script>
+
+    <script src="wp-content/themes/benqu/assets/js/metisMenu.min8a54.js"></script>
+    <script src="wp-content/themes/benqu/assets/js/sidebarnav.min8a54.js"></script>
+
+    <script src="wp-content/themes/benqu/assets/js/jquery.magnific-popup.minf488.js"></script>
+
+    <script src="wp-content/themes/benqu/assets/js/scripts8a54.js"></script>
+
+    <script src="wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js"></script>
+
+    <script src="include/main.js"></script>
+
+    <script src="gallerys/bootstrap.bundle.min.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src="gallery/script.js"></script>
+
+    <!--hello MF-->
+    <!--Ye Niche Ka code apne Har Page Par Paste Kardo apne Header.Html page ko link karne ke liye-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link href="css/Header.css" rel="stylesheet" />
+
+    <script>
+        $(document).ready(function () {
+            $("#header-top").load("include/header.html", function () {
+                loadMenu(); // ✅ Jab header load ho jaye, tab menu bhi load hoga
+            });
+        });
+
+        $(document).ready(function () {
+            $("#footer-top").load("include/footer.html", function () {
+                loadMenu();
+                contact();
+            }); // Yeh header.html ko yaha inject karega
+        });
+    </script>
+
+    <!--Hello MF End-->
+
+</body>
+
+
+</html>

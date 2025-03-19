@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en-US" ng-app="dashboardApp">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="profile" href="https://gmpg.org/xfn/11"> -->
+    <title>IRMRA - RubTech Focus Magazine</title>
+
+    <meta name="title" content="IRMRA - RubTech Focus Magazine" />
+
+    <meta name="keywords" content="IRMRA - RubTech Focus Magazine" />
+
+    <meta name="description"
+          content="An Accredited independent Laboratory With Wide Spectrum of services in Testing, Research &amp; Development, Inspection, Training &amp; Validation in Rubber and Allied Material..." />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHYKPRDX18"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DHYKPRDX18');
+    </script>
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+
+    <meta name='robots' content='index,follow' />
+    <meta name="googlebot" content="index,follow" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="IRMRA - Polymer &amp; Rubber Research &amp; Testing Center" />
+
+    <meta property="og:description"
+          content="An Accredited independent Laboratory With Wide Spectrum of services in Testing, Research &amp; Development, Inspection, Training &amp; Validation in Rubber and Allied Material..." />
+
+    <meta property="og:url" content="http://www.rubtechfocus.com/index.html" />
+    <meta property="og:site_name" content="IRMRA Magazine" />
+    <meta property="og:image" content="http://www.rubtechfocus.com/assets/images/IRMRA-logo.png" />
+
+    <link rel="stylesheet" href="assets/css/style2.css">
+
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="wp-content/uploads/siteground-optimizer-assets/style1.css" media="all" />
+
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/register-css.css">
+
+    <script src="wp-includes/js/jquery/jquery.minf43b.js"></script>
+    <!--
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="megamenu-responsive/dist/style.css"> -->
+
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- radio-button -->
+
+    <link rel="stylesheet" href="radio-btn/style.css">
+
+    <link rel="stylesheet" href="tabs/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="angular_scripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="angular_scripts/Controllers/RegisterPageController.js"></script>
+
+</head>
+
+<body ng-controller="RegisterPageController"
+      class="page-template page-template-elementor-template page-template-elementor-template-php page page-id-1013 theme-benqu woocommerce-no-js ehf-template-benqu ehf-stylesheet-benqu elementor-default elementor-kit-5 elementor-page elementor-page-1013">
+
+    <div class="pfy-main-wrapper">
+        <div id="header-top"></div>
+
+        <div class="benqu-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ol class="breadcrumb-item">
+                            <li><a href="index.html">Home</a></li>
+                            <li> <a href="register.html">Registration</a> </li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="register">
+            <div class="container">
+                <div class="row text-center pt-5 pb-4">
+                    <h1>Registration Form</h1>
+
+                </div>
+
+                <div class="row no-gutters">
+
+                    <!-- <div class="title-column col-lg-4 col-md-6 col-sm-12">
+
+                         <img src="assets/images/popup-img.jpg" alt="Conference Brochure" width="100%">
+
+
+                        <div class="inner">
+
+                            <div class="sec-title light">
+
+                                <div class="icon-box"><span class="icon flaticon-rocket-ship"></span></div>
+
+                                <h2>REGISTER NOW</h2>
+
+                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et dolore magna.</div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!--Register Form-->
+
+                    <div class="register-form col-lg-12 col-md-12 col-sm-12">
+
+                        <div class="form-inner">
+
+                            <!-- <h2>Download Form</h2> -->
+
+                            <form method="post" action="">
+
+                                <div class="row">
+
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="fullName">Full Name<span>*</span> </label>
+                                            <span class="icon fa fa-user"></span>
+                                            <input type="text" name="full-name" id="fullName" ng-model="fullName"
+                                                   placeholder="Enter Your Full Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="company">Your Company Name</label>
+                                            <span class="icon fa fa-industry"></span>
+                                            <input type="text" name="company" id="company" ng-model="company"
+                                                   placeholder="Enter Your Company Name">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="company">Email Address</label>
+                                            <span class="icon fa fa-envelope"></span>
+                                            <input type="text" name="company" id="emailId" ng-model="emailId"
+                                                   placeholder="Enter Your Email Address">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="company">Phone Number</label>
+                                            <span class="icon fa fa-phone"></span>
+                                            <input type="text" name="company" maxlength="15" oninput="validateNumericInput(this)" id="phoneNo" ng-model="phoneNo"
+                                                   placeholder="Enter Your Phone Number">
+                                        </div>
+                                    </div>
+
+                                    <div id="MagazineSubscription" class="col-lg-6">
+                                        <h2 class="form-headings">Magazine Subscription</h2>
+                                        <div class="container">
+                                            <div class="radio-tile-group">
+                                                <div class="input-container">
+                                                    <input id="rdoPrint" class="radio-button" type="radio" name="rdosubscription" value="Print"
+                                                           ng-model="rdosubscription" />
+                                                    <div class="radio-tile">
+
+                                                        <label for="rdoPrint" class="radio-tile-label">Print</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-container">
+                                                    <input id="rdoDigital" class="radio-button" type="radio" name="rdosubscription" value="Digital"
+                                                           ng-model="rdosubscription" />
+                                                    <div class="radio-tile">
+
+                                                        <label for="rdoDigital" class="radio-tile-label">Digital</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-container">
+                                                    <input id="rdoBoth" class="radio-button" type="radio" name="rdosubscription" value="Both"
+                                                           ng-model="rdosubscription" />
+                                                    <div class="radio-tile">
+
+                                                        <label for="rdoBoth" class="radio-tile-label">Both</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h2 class="form-headings"> Subscription Duration</h2>
+
+                                        <div class="container">
+                                            <div class="radio-tile-group">
+                                                <div class="input-container">
+                                                    <input id="oneyear" class="radio-button" type="radio" name="subDuration" value="1 Year"
+                                                           ng-model="subDuration" />
+                                                    <div class="radio-tile">
+                                                        <label for="oneyear" class="radio-tile-label">1 Year</label>
+                                                    </div>
+                                                </div>
+                                                <div class="input-container">
+                                                    <input id="twoyear" class="radio-button" type="radio" name="subDuration" value="2 Year"
+                                                           ng-model="subDuration" />
+                                                    <div class="radio-tile">
+                                                        <label for="twoyear" class="radio-tile-label">2 Year</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="deliveryPreference">
+                                        <h2 class="form-headings">Delivery Preference</h2>
+
+                                        <div class="row">
+
+                                            <div class="col-lg-12 col-md-6 col-sm-12">
+                                                <div class="form-group mailing-address">
+                                                    <label for="state">Mailing Address <span>*</span></label>
+                                                    <span class="icon fa fa-map"></span>
+                                                    <input type="text" name="state" id="delAddress" ng-model="delAddress"
+                                                           placeholder="Enter Your Room No / Area" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="city">Your City / State <span>*</span></label>
+                                                    <span class="icon fa fa-map"></span>
+                                                    <input type="text" name="city" id="delCity" ng-model="delCity"
+                                                           placeholder="Enter Your City / State" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="company">Zip / Postal Code <span>*</span></label>
+                                                    <span class="icon fa fa-map"></span>
+                                                    <input type="text" name="company" id="delPostalCode" ng-model="delPostalCode"
+                                                           placeholder="Enter Your Zip / Postal Code" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="company">Your Country <span>*</span></label>
+                                                    <span class="icon fa fa-map"></span>
+                                                    <input type="text" name="company" id="delCountry" ng-model="delCountry"
+                                                           placeholder="Enter Your Country Name" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="billing-address-section">
+                                        <div class="col-lg-12 col-md-6 col-sm-12">
+                                            <div class="billl">
+                                                <h2 class="form-headings">Billing Address</h2>
+
+                                                <div id="addressDiv" class="form-check">
+                                                    <input class="form-check-input" type="checkbox" ng-model="sameAsDelivery">
+                                                    <label class="form-check-label" for="sameasabove">
+                                                        Same as Delivery Preference
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group form-groupss">
+                                                <span class="icon fa fa-map"></span>
+                                                <input type="text" name="company" id="billAddress" ng-model="billAddress"
+                                                       placeholder="Enter Your Room No" ng-required="!sameAsDelivery">
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label for="city">Your City / State <span>*</span></label>
+                                                        <span class="icon fa fa-map"></span>
+                                                        <input type="text" name="city" id="bilCity" ng-model="bilCity"
+                                                               placeholder="Enter Your City / State" ng-required="!sameAsDelivery">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label for="company">Zip / Postal Code <span>*</span></label>
+                                                        <span class="icon fa fa-map"></span>
+                                                        <input type="text" name="company" id="bilPostalCode" ng-model="bilPostalCode"
+                                                               placeholder="Enter Your Zip / Postal Code" ng-required="!sameAsDelivery">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label for="company">Your Country <span>*</span></label>
+                                                        <span class="icon fa fa-map"></span>
+                                                        <input type="text" name="company" id="bilCountry" ng-model="bilCountry"
+                                                               placeholder="Enter Your Country Name" ng-required="!sameAsDelivery">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="codepen-container">
+                                        <div id="icetab-container">
+                                            <div id="paymentinfotab" class="icetab current-tab">Payment Information</div>
+                                            <div id="promotional" class="icetab">Promotional Preferences</div>
+                                            <div id="memberStatus" class="icetab">IRMRA Membership Status</div>
+                                        </div>
+
+                                        <div id="icetab-content">
+                                            <!-- Payment Information Tab -->
+                                            <div class="tabcontent tab-active">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12">
+                                                        <h2 class="form-headings">Payment Information</h2>
+                                                        <div class="container">
+                                                            <div id="paymentinfo" class="radio-tile-group">
+                                                                <div class="input-container">
+                                                                    <input id="onlinePay" class="radio-button" type="radio"
+                                                                           name="rdoPayment" value="Online" ng-model="formData.paymentMethod" />
+                                                                    <div class="radio-tile">
+                                                                        <label for="onlinePay" class="radio-tile-label">Online</label>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="input-container">
+                                                                    <input id="byCheque" class="radio-button" type="radio"
+                                                                           name="rdoPayment" value="Cheque" ng-model="formData.paymentMethod" />
+                                                                    <div id="cheque" class="radio-tile">
+                                                                        <label for="byCheque" class="radio-tile-label">Cheque</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Promotional Preferences Tab -->
+                                            <div class="tabcontent">
+                                                <div class="col-lg-12">
+                                                    <h2 class="form-headings">Do you want to continue receiving promotional offers & latest updates?</h2>
+                                                    <div class="container">
+                                                        <div class="radio-tile-group">
+                                                            <div class="input-container">
+                                                                <input id="rdoPromote" class="radio-button" type="radio"
+                                                                       name="rdoPromotion" value="Yes" ng-model="formData.promotionPreference" />
+                                                                <div class="radio-tile">
+                                                                    <label for="rdoPromote" class="radio-tile-label">Yes</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="input-container">
+                                                                <input id="rdoDontPromote" class="radio-button" type="radio"
+                                                                       name="rdoPromotion" value="No" ng-model="formData.promotionPreference" />
+                                                                <div class="radio-tile">
+                                                                    <label for="rdoDontPromote" class="radio-tile-label">No</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Membership Status Tab -->
+                                            <div class="tabcontent">
+                                                <div class="col-lg-6">
+                                                    <h2 class="form-headings">IRMRA Membership Status</h2>
+                                                    <div class="container">
+                                                        <div class="radio-tile-group radio-tile-groupss">
+                                                            <div class="input-container">
+                                                                <input id="rdoMember" class="radio-button" type="radio"
+                                                                       name="rdoMemberStatus" value="Member" ng-model="formData.membershipStatus" />
+                                                                <div class="radio-tile">
+                                                                    <label for="rdoMember" class="radio-tile-label">Member</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="input-container">
+                                                                <input id="rdoNonMember" class="radio-button" type="radio"
+                                                                       name="rdoMemberStatus" value="Non-Member" ng-model="formData.membershipStatus" />
+                                                                <div class="radio-tile">
+                                                                    <label for="rdoNonMember" class="radio-tile-label">Non-Member</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Terms and Conditions -->
+                                        <div class="col-lg-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" ng-model="formData.agreeTerms" id="flexCheckDefault">
+                                                <label class="form-check-label terms" for="flexCheckDefault">
+                                                    I Agree Terms & Conditions.
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div id="errorDiv" ng-show="ErrorMessage">
+                                            <label id="lblError" class="text-danger">{{ ErrorMessage }}</label>
+                                        </div>
+
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <p id="errorTag" class="text-danger">{{ ErrorMessage }}</p>
+                                        </div>
+
+                                        <div class="form-group text-left">
+                                            <button type="button" id="submitBtn" ng-click="register()" class="theme-btn btn-style-three">
+                                                <span class="btn-title">Register</span>
+                                            </button>
+                                            <button type="button" id="PlswaitBtn" disabled="" class="theme-btn btn-style-three d-none">
+                                                <span class="btn-title">Please Wait..</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+
+
+    <!-- #page -->
+    <!-- footer -->
+
+    <div id="footer-top"></div>
+
+    <!-- footer-ends -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script> -->
+    <script src="wp-content/themes/benqu/assets/js/owl.carousel.min8a54.js"></script>
+
+    <script src="wp-content/themes/benqu/assets/js/metisMenu.min8a54.js"></script>
+    <script src="wp-content/themes/benqu/assets/js/sidebarnav.min8a54.js"></script>
+
+    <script src="wp-content/themes/benqu/assets/js/jquery.magnific-popup.minf488.js"></script>
+
+    <script src="wp-content/themes/benqu/assets/js/scripts8a54.js"></script>
+
+    <script src="wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js"></script>
+
+    <script src="include/main.js"></script>
+
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> -->
+    <!-- <script  src="megamenu-responsive/dist/script.js"></script> -->
+    <!--<script src="radio-btn/dist/script.js"></script>-->
+
+    <script src="tabs/script.js"></script>
+    <script src="assets/js/registerFormValidation.js"></script>
+    <script>
+
+
+
+
+
+    </script>
+
+    <!--hello MF-->
+    <!--Ye Niche Ka code apne Har Page Par Paste Kardo apne Header.Html page ko link karne ke liye-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link href="css/Header.css" rel="stylesheet" />
+
+    <script>
+        $(document).ready(function () {
+            $("#header-top").load("include/header.html", function () {
+                loadMenu(); // ✅ Jab header load ho jaye, tab menu bhi load hoga
+            });
+        });
+
+        $(document).ready(function () {
+            $("#footer-top").load("include/footer.html", function () {
+                loadMenu(); // ✅ Jab header load ho jaye, tab menu bhi load hoga
+            });
+        });
+    </script>
+
+    <!--Hello MF End-->
+
+</body>
+
+</html>

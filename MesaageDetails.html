@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="dashboardApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="profile" href="https://gmpg.org/xfn/11"> -->
+    <title>IRMRA - RubTech Focus Magazine</title>
+
+    <meta name="title" content="IRMRA - RubTech Focus Magazine" />
+
+    <meta name="keywords" content="IRMRA - RubTech Focus Magazine" />
+
+    <meta name="description" content="An Accredited independent Laboratory With Wide Spectrum of services in Testing, Research &amp; Development, Inspection, Training &amp; Validation in Rubber and Allied Material..." />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHYKPRDX18"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DHYKPRDX18');
+    </script>
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+
+    <meta name='robots' content='index,follow' />
+    <meta name="googlebot" content="index,follow" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="IRMRA - Polymer &amp; Rubber Research &amp; Testing Center" />
+
+    <meta property="og:description"
+          content="An Accredited independent Laboratory With Wide Spectrum of services in Testing, Research &amp; Development, Inspection, Training &amp; Validation in Rubber and Allied Material..." />
+
+    <meta property="og:url" content="https://www.rubtechfocus.com/index.html" />
+    <meta property="og:site_name" content="IRMRA Magazine" />
+    <meta property="og:image" content="https://www.rubtechfocus.com/assets/images/IRMRA-logo.png" />
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" id="siteground-optimizer-combined-css-2e0e06ff0aaf46be9d23e30e0fb057eb"
+          href="wp-content/uploads/siteground-optimizer-assets/style1.css" media="all" />
+    <meta name='robots' content='max-image-preview:large' />
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="wp-includes/js/jquery/jquery.minf43b.js"></script>
+
+
+
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <title>Message Details</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="angular_scripts/Controllers/MessageDetailsController.js"></script>
+    <script src="angular_scripts/Controllers/HomeController.js"></script>
+    <style>
+        /* Swiper Pagination Bullets ka default style override */
+        /* Swiper Pagination Bullets */
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background: #ccc;
+            opacity: 1;
+            margin: 0 5px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Active Bullet */
+        .swiper-pagination-bullet-active {
+            background: #007bff;
+            border-color: #007bff;
+            width: 14px;
+            height: 14px;
+        }
+
+        /* Optional Hover Effect */
+        .swiper-pagination-bullet:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body ng-controller="MessageDetailsController">
+
+
+    <div class="pfy-main-wrapper">
+
+        <!-- header section start -->
+
+        <div id="header-top"></div>
+
+        <!-- header section end -->
+        <div id="pfy_reading_progress"></div>
+
+        <div class="benqu-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ol class="breadcrumb-item">
+                            <li><a href="index.html">Home</a></li>
+                            <li>{{messageDetails.MessegeFrom}}</a> </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pfy_single_post_wrapper pfy-inter-wraap">
+            <div class="container">
+                <div class="row benqu-sticky-wrap d-flex justify-content-center align-items-center">
+                    <div class="col-xl-8 benqu-sticky-item">
+                        <div class="ajax-scroll-post">
+                            <div class="bnq__post_wap_loop">
+                                <article id="post-{{messageDetails.ID}}" class="post hentry">
+                                    <header class="entry-header">
+                                        <div class="row align-items-center">
+                                            <!-- Message Image -->
+                                            <div class="col-md-3">
+                                                <div class="message-img">
+                                                    <img ng-src="{{messageDetails.ImagePath || 'assets/images/default.jpg'}}"
+                                                         alt="{{messageDetails.Name}}" width="100%">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="message-content">
+                                                    <div class="pfy-post-content">
+                                                        <a class="benqu-cate-badge benqu-cate-badge-r benqu-cate-badge-rr" href="#">
+                                                            <span>{{messageDetails.MessegeFrom}}</span>
+                                                        </a>
+                                                        <h1>{{messageDetails.Name}}</h1>
+                                                        <div class="event-content-left">
+                                                            <p>{{messageDetails.Paragraph}}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </header>
+
+                                    <!-- Full Message Paragraph -->
+                                    <div class="pfy-single-post-thumb">
+                                        <div class="event-content-left">
+                                            <p class="text-break">
+                                                {{messageDetails.FullMessage}}
+                                            </p>
+
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Subscribe Section -->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="downlode-brousher-buttons">
+                                                <a href="#">Subscribe Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="elementor-widget-wrap  col-xl-4 elementor-element-populated slider-right">
+
+
+                        <!-- <div class="elementor-element elementor-element-029349a elementor-widget elementor-widget-benqu-section-title"
+                            data-id="029349a" data-element_type="widget"
+                            data-widget_type="benqu-section-title.default">
+                            <div class="elementor-widget-container">
+                                <div class="benqu-section-title-wrap text-left slider-heading">
+                                    <h2>Popular Posts</h2>
+                                    <span></span>
+                                </div>
+
+                            </div>
+                        </div> -->
+                        <div class="elementor-column  elementor-top-column elementor-element elementor-element-b140c56 "
+                             data-id="b140c56" data-element_type="column" ng-controller="HomeController">
+                            <div class="elementor-widget-wrap elementor-element-populated slider-right slider-rights">
+
+                                <div class="elementor-element elementor-element-289d445 elementor-widget elementor-widget-wp-widget-benqu_post_slider"
+                                     data-id="289d445" data-element_type="widget"
+                                     data-widget_type="wp-widget-benqu_post_slider.default">
+                                    <div class="elementor-widget-container">
+
+                                        <!--Start Single Sidebar Box-->
+                                        <div class="recent-post">
+                                            <div class="recent-news-widget">
+                                                <h5 class="p-4">Latest Magazines</h5>
+                                                <!-- Dynamic Magazine Slider -->
+                                                <!-- Swiper Container -->
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <!-- Loop through magazines -->
+                                                        <div class="swiper-slide" ng-repeat="mag in magzines">
+                                                            <a class="post-thumbnil" href="#">
+                                                                <img ng-if="mag.ImagePath" loading="lazy" decoding="async"
+                                                                     width="640"
+                                                                     ng-src="{{ mag.ImagePath }}"
+                                                                     class="attachment-large size-large wp-post-image"
+                                                                     alt="Magazine Image">
+                                                                <span ng-if="!mag.ImagePath" class="text-muted">No Image Available</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Pagination Bullets -->
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+
+
+                                                <!-- End Dynamic Magazine Slider -->
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div><!-- #page -->
+    <div id="footer-top"></div>
+    <!-- footer__section__end -->
+
+    <div class="back-top-btn">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+
+
+    <script src="assets/js/jquery.js"></script>
+
+    <script src="wp-content/themes/benqu/assets/js/owl.carousel.min8a54.js"></script>
+
+    <script src="wp-content/themes/benqu/assets/js/metisMenu.min8a54.js"></script>
+    <script src="wp-content/themes/benqu/assets/js/sidebarnav.min8a54.js"></script>
+
+    <script src="wp-content/themes/benqu/assets/js/jquery.magnific-popup.minf488.js"></script>
+
+    <script src="wp-content/themes/benqu/assets/js/scripts8a54.js"></script>
+
+    <script src="wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js"></script>
+
+    <script src="include/main.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--hello MF-->
+    <!--Ye Niche Ka code apne Har Page Par Paste Kardo apne Header.Html page ko link karne ke liye-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link href="css/Header.css" rel="stylesheet" />
+
+    <script>
+        $(document).ready(function () {
+            $("#header-top").load("include/header.html", function () {
+                loadMenu(); // ✅ Jab header load ho jaye, tab menu bhi load hoga
+            });
+        });
+
+        $(document).ready(function () {
+            $("#footer-top").load("include/footer.html", function () {
+                loadMenu();
+                contact();
+            }); // Yeh header.html ko yaha inject karega
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true, // Loop enable
+            autoplay: {
+                delay: 3000, // 3 seconds delay
+                disableOnInteraction: false, // Auto play should not stop on user interaction
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+    <!--Hello MF End-->
+</body>
+</html>

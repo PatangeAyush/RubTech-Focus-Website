@@ -1,0 +1,548 @@
+﻿<!doctype html>
+<html lang="en-US" ng-app="dashboardApp">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Events Details</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="profile" href="https://gmpg.org/xfn/11"> -->
+    <title>IRMRA - RubTech Focus Magazine</title>
+
+    <meta name="title" content="IRMRA - RubTech Focus Magazine" />
+
+    <meta name="keywords" content="IRMRA - RubTech Focus Magazine" />
+
+    <meta name="description"
+        content="An Accredited independent Laboratory With Wide Spectrum of services in Testing, Research &amp; Development, Inspection, Training &amp; Validation in Rubber and Allied Material..." />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHYKPRDX18"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DHYKPRDX18');
+    </script>
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+
+    <meta name='robots' content='index,follow' />
+    <meta name="googlebot" content="index,follow" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="IRMRA - Polymer &amp; Rubber Research &amp; Testing Center" />
+
+    <meta property="og:description"
+        content="An Accredited independent Laboratory With Wide Spectrum of services in Testing, Research &amp; Development, Inspection, Training &amp; Validation in Rubber and Allied Material..." />
+
+    <meta property="og:url" content="https://www.rubtechfocus.com/index.html" />
+    <meta property="og:site_name" content="IRMRA Magazine" />
+    <meta property="og:image" content="https://www.rubtechfocus.com/assets/images/IRMRA-logo.png" />
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" id="siteground-optimizer-combined-css-2e0e06ff0aaf46be9d23e30e0fb057eb"
+        href="wp-content/uploads/siteground-optimizer-assets/style1.css" media="all" />
+    <meta name='robots' content='max-image-preview:large' />
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="wp-includes/js/jquery/jquery.minf43b.js"></script>
+
+
+
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- jQuery and AngularJS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!-- Your Angular App and Controllers -->
+    <script src="angular_scripts/app.js"></script>
+    <script src="angular_scripts/Controllers/RecentEventsController.js"></script>
+    <script src="angular_scripts/Controllers/HomeController.js"></script>
+    <style>
+        /* Pagination Styling */
+        .swiper-pagination {
+            text-align: center;
+            margin-top: 25px;
+            position: relative !important;
+            top: 10px;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet {
+            background-color: #ff9933;
+            /* Orange */
+            opacity: 1;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin: 5px;
+            cursor: pointer;
+            /* Ye ensure karein ki pointer ho */
+            transition: all 0.3s ease-in-out;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet-active {
+            background-color: #008000 !important;
+            /* Green */
+            width: 20px;
+            height: 20px;
+            /* transform: scale(1.2); */
+        }
+    </style>
+</head>
+
+<body ng-controller="RecentEventsController">
+    <!-- header section start -->
+
+    <div id="header-top"></div>
+
+
+
+    <!-- header section end -->
+    <div class="benqu-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol class="breadcrumb-item">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <h4 id="event-title">Loading...</h4>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pfy_single_post_wrapper pfy-inter-wrap">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="ajax-scroll-post">
+                        <div class="bnq__post_wap_loop">
+                            <article class="post">
+                                <header class="entry-header text-center">
+                                    <div class="event-heading">
+                                        <h1 id="event-titles" class="fw-bold">Loading...</h1>
+                                    </div>
+                                    <div class="event-heading">
+                                        <h3 id="event-subtitle" class="fw-normal">Loading...</h3>
+                                    </div>
+                                </header>
+                                <!-- ✅ Yehaan ek empty div jisme multiple images aayengi -->
+                                <div id="event-images" class="pfy-single-post-thumb text-center my-4"></div>
+                                <div class="event-content-left px-3">
+                                    <div id="event-description" class="fs-5"></div>
+                                </div>
+                            </article>
+                            <div class="col-md-12 text-start mt-4">
+                                <div class="download-brochure-buttons">
+                                    <a href="register.html" class="btn btn-success btn-lg px-4 py-2 rounded">Subscribe
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-xl-4  mx-auto benqu-sticky-item">
+                    <aside id="secondary" class="widget-area">
+
+                        <div class="benqu-section-title-wrap text-left">
+                            <h2 class="widget-title">Recent Events</h2><span></span>
+                        </div>
+
+                        <section id="benqu_latest_news_widget-3" class="widget benqu_latest_news_widget">
+                            <div class="recent-posts-widget">
+                                <div class="pfy-post-grid-wrap grid-style-tb">
+                                    <div class="pfy-post-item pfy-scale pfy-img-commn-style"
+                                        ng-repeat="event in recentEvents">
+                                        <div class="benqu__post-content pfy-scale d-flex">
+                                            <div class="pfy-post-thumb">
+                                                <a href="javascript:void(0)" ng-click="loadEventDetails(event)">
+                                                    <img width="640" height="408" ng-src="{{ event.ImageUrl }}"
+                                                        class="attachment-large size-large wp-post-image"
+                                                        alt="{{ event.EventTitle }}" decoding="async" loading="lazy">
+                                                </a>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <div class="pfy-post-meta-tb d-flex">
+                                                    <a class="benqu-cate-name" href="javascript:void(0)"
+                                                        style="color:#005c13" ng-click="loadEventDetails(event)">
+                                                        <span>IRMRA</span>
+                                                    </a>
+                                                </div>
+
+                                                <div class="pfy-post-content">
+                                                    <h4 class="benqu__post-title pfy-post-title hover-title">
+                                                        <a href="javascript:void(0)" ng-click="loadEventDetails(event)"
+                                                            rel="bookmark" title="{{ event.EventTitle }}">
+                                                            {{ event.EventTitle }}
+                                                        </a>
+                                                    </h4>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+
+
+
+                        <div class="elementor-widget-wrap elementor-element-populated slider-right">
+
+
+                            <!-- <div class="elementor-element elementor-element-029349a elementor-widget elementor-widget-benqu-section-title"
+                                data-id="029349a" data-element_type="widget"
+                                data-widget_type="benqu-section-title.default">
+                                <div class="elementor-widget-container">
+                                    <div class="benqu-section-title-wrap text-left slider-heading">
+                                        <h2>Popular Posts</h2>
+                                        <span></span>
+                                    </div>
+
+                                </div>
+                            </div> -->
+                            <div class="elementor-column  elementor-top-column elementor-element elementor-element-b140c56 "
+                                data-id="b140c56" data-element_type="column" ng-controller="HomeController">
+                                <div
+                                    class="elementor-widget-wrap elementor-element-populated slider-right slider-rights">
+
+                                    <div class="elementor-element elementor-element-289d445 elementor-widget elementor-widget-wp-widget-benqu_post_slider"
+                                        data-id="289d445" data-element_type="widget"
+                                        data-widget_type="wp-widget-benqu_post_slider.default">
+                                        <div class="elementor-widget-container">
+
+                                            <!--Start Single Sidebar Box-->
+                                            <div class="recent-post">
+                                                <div class="recent-news-widget">
+                                                    <!-- <h5>Latest Magazines</h5>  -->
+                                                    <!-- You can give any heading you want -->
+                                                    <!-- Dynamic Magazine Slider -->
+                                                    <!-- Swiper Container -->
+                                                    <div class="swiper mySwiper">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide" ng-repeat="mag in magzines">
+                                                                <a class="post-thumbnil" href="#">
+                                                                    <img ng-if="mag.ImagePath" loading="lazy"
+                                                                        decoding="async" width="640" height="408"
+                                                                        ng-src="{{ mag.ImagePath }}"
+                                                                        class="attachment-large size-large wp-post-image"
+                                                                        alt="Magazine Image">
+                                                                    <span ng-if="!mag.ImagePath" class="text-muted">No
+                                                                        Image
+                                                                        Available</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Pagination Moved Outside -->
+                                                        <div class="swiper-pagination"></div>
+                                                    </div>
+
+
+                                                    <!-- End Dynamic Magazine Slider -->
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </aside><!-- #secondary -->
+                </div>
+                <!--Recent Event Start-->
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer__section__start -->
+    <div id="footer-top"></div>
+    <!-- footer__section__end -->
+    <!--<script>
+
+        $(document).ready(function () {
+            // ✅ Query String se EventTitle nikalo
+            const urlParams = new URLSearchParams(window.location.search);
+            const eventTitle = urlParams.get("EventTitle");
+
+            if (!eventTitle) {
+                console.log("⚠️ No event title found in URL!");
+                return;
+            }
+
+            console.log("🔍 Fetching events for:", eventTitle); // Debugging
+
+            // ✅ API se Event Details fetch karo
+            $.ajax({
+                url: `https://api-rubtech.designaccentindia.com/Event/GetEventsByTitle?EventTitle=${encodeURIComponent(eventTitle)}`,
+                method: "POST",
+                dataType: "json",
+                success: function (response) {
+                    console.log("✅ API Response:", response); // Debugging
+
+                    if (response && response.length > 0) {
+                        // ✅ First Event ka Title, Subtitle, Paragraph set karo
+                        $("#event-title").text(response[0].EventTitle);
+                        $("#event-titles").text(response[0].EventTitle);
+                        $("#event-subtitle").text(response[0].SubTitle);
+                        $("#event-description").html(response[0].Paragraph); // ✅ HTML use kiya for line breaks
+
+                        $("#event-images").empty(); // ✅ Purane images hatao
+
+                        // ✅ Sabhi records loop karo aur images collect karo
+                        response.forEach((event, index) => {
+                            console.log(`🎯 Processing Event ${index + 1}:`, event);
+
+                            if (event.ImagePaths && event.ImagePaths.length > 0) {
+                                event.ImagePaths.forEach((imgPath, imgIndex) => {
+                                    let parts = imgPath.split("|");
+                                    let imagePath = parts.length > 1 ? parts[1] : parts[0];
+
+                                    imagePath = imagePath.replace(/\\/g, "/"); // ✅ Backslash to forward slash
+                                    let relativePath = imagePath.split("Content/Uploads/").pop();
+                                    let finalImagePath = `https://api-rubtech.designaccentindia.com/Content/Uploads/${relativePath}`;
+
+                                    console.log(`🖼 Image ${imgIndex + 1}:`, finalImagePath); // Debugging
+
+                                    // ✅ Image ko append karo div me
+                                    let imgTag = `<img src="${finalImagePath}" class="img-fluid rounded shadow w-100 my-2" alt="Event Image">`;
+                                    $("#event-images").append(imgTag);
+                                });
+                            } else {
+                                console.log(`⚠️ No images found for event ${index + 1}`);
+                            }
+                        });
+
+                    } else {
+                        console.log("⚠️ No event found!");
+                    }
+                },
+                error: function (err) {
+                    console.log("❌ Error fetching event details:", err);
+                },
+            });
+        });
+
+
+        $scope.getEventDetails = function () {
+            $http.post('https://api-rubtech.designaccentindia.com/Event/GetEvents')
+                .then(function (response) {
+                    console.log('Event API Response:', response.data);
+
+                    if (Array.isArray(response.data)) {
+                        const uniqueEventsMap = {};
+                        const uniqueEvents = [];
+
+                        response.data.forEach(event => {
+                            if (event.EventTitle && !uniqueEventsMap[event.EventTitle]) {
+                                uniqueEventsMap[event.EventTitle] = true;
+
+                                const imageName = event.ImagePaths && event.ImagePaths.length > 0
+                                    ? (event.ImagePaths[0].includes('\\') ? event.ImagePaths[0].split('\\').pop() : event.ImagePaths[0].split('/').pop())
+                                    : null;
+
+                                uniqueEvents.push({
+                                    ID: event.ID,
+                                    EventTitle: event.EventTitle,
+                                    SubTitle: event.SubTitle,
+                                    Paragraph: event.Paragraph,
+                                    ImageUrl: imageName
+                                        ? 'https://api-rubtech.designaccentindia.com/Content/Uploads/' + imageName
+                                        : 'assets/images/no-image.jpg'
+                                });
+                            }
+                        });
+
+                        $scope.recentEvents = uniqueEvents;
+                    } else {
+                        console.error("Invalid response format for events:", response.data);
+                    }
+                })
+                .catch(function (error) {
+                    console.error('Error fetching event details:', error);
+                });
+        };
+
+
+    </script>-->
+    <script>
+        $(document).ready(function () {
+            // ✅ Query String se EventTitle nikalo
+            const urlParams = new URLSearchParams(window.location.search);
+            const eventTitle = urlParams.get("EventTitle");
+
+            if (!eventTitle) {
+                console.log("⚠️ No event title found in URL!");
+                return;
+            }
+
+            console.log("🔍 Fetching events for:", eventTitle); // Debugging
+
+            // ✅ API se Event Details fetch karo
+            $.ajax({
+                url: `https://api-rubtech.designaccentindia.com/Event/GetEventsByTitle?EventTitle=${encodeURIComponent(eventTitle)}`,
+                method: "POST",
+                dataType: "json",
+                success: function (response) {
+                    console.log("✅ API Response:", response); // Debugging
+
+                    if (response && response.length > 0) {
+                        // ✅ First Event ka Title, Subtitle, Paragraph set karo
+                        $("#event-title").text(response[0].EventTitle);
+                        $("#event-titles").text(response[0].EventTitle);
+                        $("#event-subtitle").text(response[0].SubTitle);
+                        $("#event-description").html(response[0].Paragraph); // ✅ HTML use kiya for line breaks
+
+                        $("#event-images").empty(); // ✅ Purane images hatao
+
+                        let imageCounter = 0; // ✅ Image count track karne ke liye
+                        let rowContainer = null; // ✅ Row track karne ke liye
+
+                        // ✅ Sabhi records loop karo aur images collect karo
+                        response.forEach((event, index) => {
+                            console.log(`🎯 Processing Event ${index + 1}:`, event);
+
+                            if (event.ImagePaths && event.ImagePaths.length > 0) {
+                                event.ImagePaths.forEach((imgPath, imgIndex) => {
+                                    let parts = imgPath.split("|");
+                                    let imagePath = parts.length > 1 ? parts[1] : parts[0];
+
+                                    imagePath = imagePath.replace(/\\/g, "/"); // ✅ Backslash to forward slash
+                                    let relativePath = imagePath.split("Content/Uploads/").pop();
+                                    let finalImagePath = `https://api-rubtech.designaccentindia.com/Content/Uploads/${relativePath}`;
+
+                                    console.log(`🖼 Image ${imgIndex + 1}:`, finalImagePath); // Debugging
+
+                                    if (imageCounter === 0) {
+                                        // ✅ First image col-lg-12 full width
+                                        let firstImageTag = `
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-12">
+                                                        <img src="${finalImagePath}" class="img-fluid rounded shadow w-100" alt="Event Image">
+                                                    </div>
+                                                </div>
+                                            `;
+                                        $("#event-images").append(firstImageTag);
+                                    } else {
+                                        // ✅ For other images, create row for every 2 images
+                                        if (imageCounter % 2 === 1) {
+                                            // ✅ Start new row if odd counter (first in pair)
+                                            rowContainer = $('<div class="row mb-3"></div>');
+                                            $("#event-images").append(rowContainer);
+                                        }
+
+                                        // ✅ Create col-lg-6 image and append to current row
+                                        let imageTag = `
+                                                <div class="col-lg-6 mb-3">
+                                                    <img src="${finalImagePath}" class="img-fluid rounded shadow w-100" alt="Event Image">
+                                                </div>
+                                            `;
+                                        rowContainer.append(imageTag);
+                                    }
+
+                                    imageCounter++; // ✅ Increment image counter
+                                });
+                            } else {
+                                console.log(`⚠️ No images found for event ${index + 1}`);
+                            }
+                        });
+
+                    } else {
+                        console.log("⚠️ No event found!");
+                    }
+                },
+                error: function (err) {
+                    console.log("❌ Error fetching event details:", err);
+                },
+            });
+        });
+    </script>
+    <!--hello MF-->
+    <!--Ye Niche Ka code apne Har Page Par Paste Kardo apne Header.Html page ko link karne ke liye-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link href="css/Header.css" rel="stylesheet" />
+
+    <script>
+        $(document).ready(function () {
+            $("#header-top").load("include/header.html", function () {
+                loadMenu(); // ✅ Jab header load ho jaye, tab menu bhi load hoga
+            });
+        });
+
+        $(document).ready(function () {
+            $("#footer-top").load("include/footer.html", function () {
+                loadMenu();
+                contact();
+            }); // Yeh header.html ko yaha inject karega
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const observer = new MutationObserver(function (mutations, obs) {
+                if (document.querySelector(".swiper-slide")) {
+                    initializeSwiper();
+                    obs.disconnect(); // Observer ko band karna zaroori hai
+                }
+            });
+
+            observer.observe(document.body, { childList: true, subtree: true });
+        });
+
+        function initializeSwiper() {
+            var swiper = new Swiper('.mySwiper', {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+                on: {
+                    init: function () {
+                        console.log("Swiper Initialized. Active Slide Index:", this.realIndex ?? this.activeIndex ?? 0);
+                    },
+                    slideChange: function () {
+                        console.log("Active Slide Index:", this.realIndex ?? this.activeIndex ?? 0);
+                    }
+                }
+            });
+
+            swiper.autoplay.start();
+        }
+
+
+
+    </script>
+    <!--Hello MF End-->
+</body>
+
+</html>

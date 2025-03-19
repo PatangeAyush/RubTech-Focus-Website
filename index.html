@@ -1,0 +1,806 @@
+﻿<!doctype html>
+<html lang="en-US" ng-app="dashboardApp">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>IRMRA - RubTech Focus Magazine</title>
+
+    <meta name="title" content="IRMRA - RubTech Focus Magazine" />
+
+    <meta name="keywords" content="IRMRA - RubTech Focus Magazine" />
+
+    <meta name="description"
+          content="An Accredited independent Laboratory With Wide Spectrum of services in Testing, Research &amp; Development, Inspection, Training &amp; Validation in Rubber and Allied Material..." />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHYKPRDX18"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DHYKPRDX18');
+    </script>
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+
+    <meta name='robots' content='index,follow' />
+    <meta name="googlebot" content="index,follow" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="IRMRA - Polymer &amp; Rubber Research &amp; Testing Center" />
+
+    <meta property="og:description"
+          content="An Accredited independent Laboratory With Wide Spectrum of services in Testing, Research &amp; Development, Inspection, Training &amp; Validation in Rubber and Allied Material..." />
+
+    <meta property="og:url" content="https://www.rubtechfocus.com/index.html" />
+    <meta property="og:site_name" content="IRMRA Magazine" />
+    <meta property="og:image" content="https://www.rubtechfocus.com/assets/images/IRMRA-logo.png" />
+
+
+
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="wp-content/uploads/siteground-optimizer-assets/style1.css" media="all" />
+
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+    <script src="wp-includes/js/jquery/jquery.minf43b.js"></script>
+    <!--
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="megamenu-responsive/dist/style.css"> -->
+
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="angular_scripts/app.js"></script>
+    <script src="angular_scripts/Controllers/HomeController.js"></script>
+    <script src="angular_scripts/Controllers/HomeEventDetailsController.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+    <style>
+        /* Swiper Pagination Bullets ka default style override */
+        /* Swiper Pagination Bullets */
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background: #ccc;
+            opacity: 1;
+            margin: 0 5px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Active Bullet */
+        .swiper-pagination-bullet-active {
+            background: #007bff;
+            border-color: #007bff;
+            width: 14px;
+            height: 14px;
+        }
+
+        /* Optional Hover Effect */
+        .swiper-pagination-bullet:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="page-template page-template-elementor-template page-template-elementor-template-php page page-id-515 theme-benqu woocommerce-no-js ehf-template-benqu ehf-stylesheet-benqu elementor-default elementor-kit-5 elementor-page elementor-page-515" ng-controller="HomeController">
+    <div class="bnqu__popup_wrap">
+        <div class="bnqu__popup_sec">
+            <div class="bnqu__popup_ineer">
+                <button class="btn newsletter-close-btn"><i class="fas fa-times"></i></button>
+                <div class="img-holder">
+                    <img src="assets/images/popup-img.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h1>IRMRA</h1>
+
+                    <p>Download our Magazine</p>
+                    <script>
+                        (function () {
+                            window.mc4wp = window.mc4wp || {
+                                listeners: [],
+                                forms: {
+                                    on: function (evt, cb) {
+                                        window.mc4wp.listeners.push(
+                                            {
+                                                event: evt,
+                                                callback: cb
+                                            }
+                                        );
+                                    }
+                                }
+                            }
+                        })();
+                    </script>
+                    <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-448" method="post" data-id="448"
+                          data-name="Newslater">
+                        <div class="mc4wp-form-fields">
+                            <input type="email" name="EMAIL" placeholder="Your email address"
+                                   required /><input type="submit" value="Submit" />
+
+                        </div><label style="display: none !important;">
+                            Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1"
+                                                                           autocomplete="off" />
+                        </label><input type="hidden" name="_mc4wp_timestamp"
+                                       value="1702626459" /><input type="hidden" name="_mc4wp_form_id" value="448" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" />
+                        <div class="mc4wp-response"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="pfy-main-wrapper">
+        <div class="benqu_header_search">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-12">
+                        <form method="get" action="">
+                            <input type="search" name="s" id="search" value=""
+                                   placeholder="Search Headlines, News..." />
+                            <i class="close-btn fal fa-times"></i>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- header section start -->
+
+        <div id="header-top"></div>
+
+
+
+        <!-- header section end -->
+
+
+
+        <div class="clearfix"></div>
+
+
+
+        <div id="elementor_page_builder">
+
+            <div data-elementor-type="wp-page" data-elementor-id="515" class="elementor elementor-515">
+                <section class="elementor-section elementor-top-section elementor-element elementor-element-a32e7b8 elementor-section-boxed elementor-section-height-default elementor-section-height-default events"
+                         data-id="a32e7b8" data-element_type="section">
+                    <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-column elementor-col-75 elementor-top-column elementor-element elementor-element-344d8f9"
+                             data-id="344d8f9" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-9605fd7 elementor-widget elementor-widget-benqu-post-trending"
+                                     data-id="9605fd7" data-element_type="widget"
+                                     data-widget_type="benqu-post-trending.default">
+                                    <div class="elementor-widget-container">
+
+                                        <div class="pfy-trending-wra">
+
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="pfy-post-item pfy-scale">
+                                                        <div class="pfy-post-thumb pfy-img-commn-style">
+                                                            <a href="../unmatched-toner-cartridge-quality-20-less-than-oem-dummy-price-now/index.html">
+                                                                <img loading="lazy" decoding="async"
+                                                                     src="{{BannerImage1}}"
+                                                                     class="attachment-full size-full wp-post-image"
+                                                                     alt="" srcset={{BannerImage1}}>
+                                                            </a>
+                                                        </div>
+                                                        <div class="pfy-post-content">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--<div class="col-md-4" ng-repeat="event in groupedEvents">
+                                                    <div class="pfy-post-item-sm pfy-scale event11">
+                                                        <div class="pfy-post-thumb pfy-img-commn-style">
+                                                            <img ng-src="{{event.images[0] || 'assets/images/default-event.jpg'}}"
+                                                                 alt="{{event.title}}">
+                                                        </div>
+                                                        <div class="pfy-post-content">
+                                                            <h3 class="pfy-post-title event1">
+                                                                <a ng-href="{{event.link}}">
+                                                                    {{event.title}}
+                                                                </a>
+                                                            </h3>
+                                                            <a class="benqu-cate-badge benqu-cate-badge-e" ng-href="{{event.link}}">
+                                                                <span>Event</span>
+                                                            </a>
+                                                            <div class="read-more rm">
+                                                                <a ng-href="{{event.link}}">Read More &gt;&gt;</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>-->
+
+                                                <div ng-controller="HomeEventDetailsController">
+                                                    <div class="col-lg-12">
+                                                        <div class="row">
+                                                            <!-- Limit to only 3 events -->
+                                                            <div class="col-md-4" ng-repeat="event in events | limitTo:3">
+                                                                <div class="pfy-post-item-sm pfy-scale event11">
+                                                                    <div class="pfy-post-thumb pfy-img-commn-style">
+                                                                        <!-- Display only the first image -->
+                                                                        <img loading="lazy" decoding="async" width="1500" height="1001"
+                                                                             ng-src="{{event.images[0]}}"
+                                                                             class="attachment-full size-full wp-post-image"
+                                                                             alt="{{event.title}}">
+                                                                    </div>
+                                                                    <div class="pfy-post-content">
+                                                                        <h3 class="pfy-post-title event1">
+                                                                            <a href="event-details.html?EventTitle={{event.title}}">
+                                                                                {{event.title}}
+                                                                            </a>
+                                                                        </h3>
+                                                                        <a class="benqu-cate-badge benqu-cate-badge-e"
+                                                                           href="event-details.html?EventTitle={{event.title}}">
+                                                                            <span>Event</span>
+                                                                        </a>
+
+                                                                        <div class="read-more rm">
+                                                                            <a href="event-details.html?EventTitle={{event.title}}">Read More &gt;&gt;</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-c42926a"
+                             data-id="c42926a" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-cfc566d elementor-widget elementor-widget-benqu-post-list"
+                                     data-id="cfc566d" data-element_type="widget"
+                                     data-widget_type="benqu-post-list.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="pfy-post-list-wrap list-style-3">
+                                            <div class="pfy-post-item pfy-flex pfy-scale" ng-repeat="team in teams">
+                                                <div class="pfy-post-thumb pfy-img-commn-style">
+                                                    <a class="pfy-postthumb pfy-postthumb-t" href="#">
+                                                        <img decoding="async" ng-src="{{team.ImagePath || 'assets/images/default.jpg'}}"
+                                                             alt="{{team.Name}}">
+                                                    </a>
+                                                </div>
+                                                <div class="pfy-post-content">
+                                                    <h3>{{team.Name}}</h3>
+                                                    <h4 class="pfy-post-title">
+                                                        <a href="#">
+                                                            {{team.Position}}
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- section one ends -->
+                <!-- slider strats -->
+
+                <section class="technical-abstract elementor-section elementor-top-section elementor-element elementor-element-20f2fe5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                         data-id="20f2fe5" data-element_type="section"
+                         data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+
+
+                    <div class="elementor-container elementor-column-gap-default">
+
+                        <div class="elementor-column elementor-col-75 elementor-top-column elementor-element elementor-element-73dfef1"
+                             data-id="73dfef1" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-f9f435f elementor-widget elementor-widget-benqu-post-tabs-v2"
+                                     data-id="f9f435f" data-element_type="widget"
+                                     data-widget_type="benqu-post-tabs-v2.default">
+                                    <div class="elementor-widget-container">
+
+                                        <div class="tabs-to-dropdown bnq-tab-info">
+                                            <div class="pfy-section-two-title-wrap st_style_3 text-center">
+                                                <div class="pfy-section-title ">
+
+                                                    <div class="benqu-section-title-wrap text-center ">
+                                                        <h2>Technical Abstract</h2>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-content" id="pills-tab-v3Content">
+                                                <div class="tab-pane animated fadeInUp show active" id="pills-1"
+                                                     role="tabpanel" aria-labelledby="pills-1-tab">
+                                                    <div class="col-lg-12">
+                                                        <div class="row">
+                                                            <!-- ng-repeat for Technical Abstracts with limitTo:6 -->
+                                                            <div class="col-md-4" ng-repeat="abstract in technicalAbstracts | limitTo: 6">
+                                                                <div class="pfy-post-item post-v2-tab-md pfy-scale pfy-ch pfy-post-itemss">
+                                                                    <div class="pfy-post-thumb pfy-img-commn-style">
+                                                                        <a class="post-thumb" ng-href="technical-abstract-details.html?id={{abstract.Id}}">
+                                                                            <img loading="lazy" decoding="async"
+                                                                                 width="1500" height="1000"
+                                                                                 ng-src="{{abstract.ImageUrl}}"
+                                                                                 class="attachment-full size-full wp-post-image"
+                                                                                 alt="{{abstract.Name}}">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="pfy-post-content">
+                                                                        <h4 class="pfy-post-title">
+                                                                            <a ng-href="technical-abstract-details.html?id={{abstract.Id}}">
+                                                                                {{abstract.Name}}
+                                                                            </a>
+                                                                        </h4>
+                                                                        <h3>{{abstract.Author_Name}}</h3>
+                                                                        <!--<p>{{abstract.Abstract_Paragraph | limitTo: 150}}...</p>-->
+                                                                        <div class="read-more">
+                                                                            <a ng-href="technical-abstract-details.html?id={{abstract.Id}}">
+                                                                                Read More >>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- End ng-repeat -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="view-more-link text-center">
+                                                    <a class="pfy-btn pfy-btn-3" href="techinical-abstract.html">View More</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-b140c56 "
+                             data-id="b140c56" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated slider-right slider-rights">
+
+                                <div class="elementor-element elementor-element-289d445 elementor-widget elementor-widget-wp-widget-benqu_post_slider"
+                                     data-id="289d445" data-element_type="widget"
+                                     data-widget_type="wp-widget-benqu_post_slider.default">
+                                    <div class="elementor-widget-container">
+
+                                        <!--Start Single Sidebar Box-->
+                                        <div class="recent-post">
+                                            <div class="recent-news-widget">
+                                                <h5>Latest Magazines</h5> <!-- You can give any heading you want -->
+                                                <!-- Dynamic Magazine Slider -->
+                                                <!-- Swiper Container -->
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <!-- Loop through magazines -->
+                                                        <div class="swiper-slide" ng-repeat="mag in magzines">
+                                                            <a class="post-thumbnil" href="#">
+                                                                <img ng-if="mag.ImagePath" loading="lazy" decoding="async"
+                                                                     width="640" height="408"
+                                                                     ng-src="{{ mag.ImagePath }}"
+                                                                     class="attachment-large size-large wp-post-image"
+                                                                     alt="Magazine Image">
+                                                                <span ng-if="!mag.ImagePath" class="text-muted">No Image Available</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Pagination Bullets -->
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+
+
+                                                <!-- End Dynamic Magazine Slider -->
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+
+        </section>
+
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-8d208e8 elementor-section-boxed elementor-section-height-default elementor-section-height-default report"
+                 data-id="8d208e8" data-element_type="section"
+                 data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-aca965a"
+                     data-id="aca965a" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+
+                        <div class="elementor-element elementor-element-9800928 elementor-widget elementor-widget-benqu-section-title"
+                             data-id="9800928" data-element_type="widget"
+                             data-widget_type="benqu-section-title.default">
+                            <div class="elementor-widget-container">
+                                <div class="benqu-section-title-wrap text-center reports">
+                                    <h2>Report</h2>
+                                    <span></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-404cbb9 elementor-widget elementor-widget-benqu-post-list-item-wid"
+                             data-id="404cbb9" data-element_type="widget"
+                             data-widget_type="benqu-post-list-item-wid.default">
+                            <div class="elementor-widget-container">
+                                <div class="bnq-post-list-item" ng-repeat="report in reports">
+                                    <div class="pfy-post-item d-flex align-items-center pfy-scale">
+                                        <div class="pfy-post-thumb pfy-img-commn-style">
+                                            <a href="report-details.html?id={{report.ID}}">
+                                                <img loading="lazy" decoding="async" width="1500" height="1000"
+                                                     ng-src="{{report.ReportImage}}"
+                                                     class="attachment-full size-full wp-post-image"
+                                                     alt="{{report.ReportName}}">
+                                            </a>
+                                        </div>
+                                        <div class="pfy-post-content">
+                                            <a class="benqu-cate-badge benqu-cate-badge-r" href="report-details.html?id={{report.ID}}">
+                                                <span>{{report.ReportSubParagraph}}</span>
+                                            </a>
+
+                                            <h3 class="pfy-post-title">
+                                                <a href="report-details.html?id={{report.ID}}">
+                                                    {{report.ReportName}}
+                                                </a>
+                                            </h3>
+
+                                            <div class="pfy-post-excerpt" style="word-break: break-word">
+                                                {{ report.Report_Description.length > 100 ? report.Report_Description.substring(0, report.Report_Description.length / 4) + '...' : report.Report_Description }}
+
+                                            </div>
+
+                                            <!--<p>{{text}}</p>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- report ends -->
+        <!-- messages -->
+
+        <section class="messages elementor-section elementor-top-section elementor-element elementor-element-20f2fe5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                 data-id="20f2fe5" data-element_type="section"
+                 data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-70 elementor-top-column elementor-element elementor-element-73dfef1"
+                     data-id="73dfef1" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+
+                        <div class="elementor-element elementor-element-9800928 elementor-widget elementor-widget-benqu-section-title"
+                             data-id="9800928" data-element_type="widget"
+                             data-widget_type="benqu-section-title.default">
+                            <div class="elementor-widget-container">
+                                <div class="benqu-section-title-wrap text-center">
+                                    <h2 class="mess">Messages</h2>
+                                    <span></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-921864a elementor-widget elementor-widget-benqu-post-grid"
+                             data-id="921864a" data-element_type="widget"
+                             data-widget_type="benqu-post-grid.default">
+                            <div class="elementor-widget-container">
+
+                                <div class="pfy-post-grid-wrap grid-style-3 gid-style-10">
+
+
+                                    <div class="pfy-post-item pfy-scale" ng-repeat="message in messages">
+                                        <!-- Message Image -->
+                                        <div class="pfy-post-thumb pfy-img-commn-style">
+                                            <a class="post-thumb" href="#">
+                                                <img loading="lazy" decoding="async" width="1500" height="1000"
+                                                     ng-src="{{message.ImagePath || 'assets/images/default.jpg'}}"
+                                                     class="attachment-full size-full wp-post-image"
+                                                     alt="{{message.Name}}">
+                                            </a>
+                                        </div>
+
+                                        <!-- Message Content -->
+                                        <div class="pfy-post-content">
+                                            <a class="benqu-cate-badge benqu-cate-badge-m" href="MesaageDetails.html?id={{message.ID}}">
+                                                <span>{{message.MessegeFrom}}'s MESSAGE</span>
+                                            </a>
+
+
+                                            <!-- Name -->
+                                            <h4 class="pfy-post-title">
+                                                <a href="#">
+                                                    {{message.Name}}
+                                                </a>
+                                            </h4>
+
+                                            <!-- Position -->
+                                            <h4>{{message.Position}}</h4>
+
+                                            <!-- Shortened Paragraph -->
+                                            <p style="word-break: break-word">
+                                                {{message.Paragraph.length > 100 ? message.Paragraph.substring(0,100) + '...' : message.Paragraph}}
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="elementor-column elementor-col-30 elementor-top-column elementor-element elementor-element-b140c56 ele-col"
+                     data-id="b140c56" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+
+                        <div class="elementor-element elementor-element-7ce9dd6 elementor-widget elementor-widget-benqu-section-title"
+                             data-id="7ce9dd6" data-element_type="widget"
+                             data-widget_type="benqu-section-title.default">
+                            <div class="elementor-widget-container">
+
+
+                            </div>
+                        </div>
+
+                        <div class="elementor-element elementor-element-6d99093 elementor-widget elementor-widget-image"
+                             data-id="6d99093" data-element_type="widget" data-widget_type="image.default">
+
+                            <div class="elementor-widget-container" ng-repeat="ad in advertisements">
+                                <a ng-href="{{ad.URL && ad.URL !== '' ? ad.URL : '#'}}">
+                                    <img loading="lazy" decoding="async" width="350" height="329"
+                                         ng-src="{{ad.ImagePath}}"
+                                         class="attachment-full size-full wp-image-1209" alt="Advertisement">
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- messages -->
+
+
+    </div>
+
+
+
+    </div><!-- #main -->
+
+    <div class="clearfix"></div>
+
+    </div><!-- #page -->
+    <!-- footer__section__start -->
+    <div id="footer-top"></div>
+    <!-- footer__section__end -->
+
+    <div class="back-top-btn">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+
+
+    <script src="assets/js/jquery.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script> -->
+    <script src="wp-content/themes/benqu/assets/js/owl.carousel.min8a54.js"></script>
+
+    <script src="wp-content/themes/benqu/assets/js/metisMenu.min8a54.js"></script>
+    <script src="wp-content/themes/benqu/assets/js/sidebarnav.min8a54.js"></script>
+
+    <script src="wp-content/themes/benqu/assets/js/jquery.magnific-popup.minf488.js"></script>
+
+    <script src="wp-content/themes/benqu/assets/js/scripts8a54.js"></script>
+
+    <script src="wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js"></script>
+
+    <script src="include/main.js"></script>
+
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> -->
+    <!-- <script  src="megamenu-responsive/dist/script.js"></script> -->
+    <!--hello MF-->
+    <!--Ye Niche Ka code apne Har Page Par Paste Kardo apne Header.Html page ko link karne ke liye-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--hello MF-->
+    <!--Ye Niche Ka code apne Har Page Par Paste Kardo apne Header.Html page ko link karne ke liye-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="css/Header.css" rel="stylesheet" />
+
+    <script>
+        $(document).ready(function () {
+            $("#header-top").load("include/header.html", function () {
+                loadMenu(); // ✅ Jab header load ho jaye, tab menu bhi load hoga
+            });
+        });
+
+        $(document).ready(function () {
+            $("#footer-top").load("include/footer.html", function () {
+                loadMenu();
+                contact();
+            }); // Yeh header.html ko yaha inject karega
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true, // Loop enable
+            autoplay: {
+                delay: 3000, // 3 seconds delay
+                disableOnInteraction: false, // Auto play should not stop on user interaction
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+    <!--Hello MF End-->
+    <!--<script>
+
+
+
+        function loadMenu() {
+            $.ajax({
+                url: "https://localhost:44328/AboutCompany/GetAboutCompany",
+                method: "POST",
+                dataType: "json",
+                success: function (data) {
+                    var menuHtml = "";
+
+                    if (Array.isArray(data) && data.length > 0) {
+                        var aboutCompany = data[0];
+                        menuHtml = aboutCompany.CompanyAddress || "Address Not Available";
+                    } else {
+                        menuHtml = "No Data Available";
+                    }
+
+                    //$("#footer-top").html(menuHtml);
+                    $("#companyaddress").html(menuHtml);
+                    $("#text").html(menuHtml2);
+                },
+                error: function () {
+                    $("#footer-top").html("Error Fetching Data");
+                },
+            });
+        }
+        function contact() {
+            $.ajax({
+                url: "http://api-test1.designaccentindia.com/Contact/GetContact",
+                method: "POST",
+                dataType: "json",
+                success: function (data) {
+                    var menuHtml = "";
+
+                    if (Array.isArray(data) && data.length > 0) {
+                        var aboutCompany = data[0];
+                        menuHtml = aboutCompany.Address;
+                    } else {
+                        menuHtml = "No Data Available";
+                    }
+
+                    //$("#footer-top").html(menuHtml);
+                    $("#l1").html(menuHtml);
+                    $("#text").html(menuHtml2);
+                },
+                error: function () {
+                    $("#footer-top").html("Error Fetching Data");
+                },
+            });
+        }
+
+
+    </script>-->
+
+    <script>
+        $(document).ready(function () {
+            $("#mc4wp-form-1").submit(function (event) {
+                event.preventDefault(); // Form submit hone se roko
+
+                var email = $("input[name='EMAIL']").val().trim();
+
+                if (!validateEmail(email)) {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Invalid Email",
+                        text: "Please enter a valid email address.",
+                    });
+                    return;
+                }
+
+                $.ajax({
+                    url: "https://api-rubtech.designaccentindia.com/NewsLetter/AddNewsLetter",
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify({ email: email }),
+                    success: function (response) {
+                        Swal.fire({
+                            icon: "success",
+                            title: "Subscribed!",
+                            text: "You have successfully subscribed to our newsletter.",
+                        }).then(() => {
+                            //$(".bnqu__popup_sec").fadeOut(300, function () {
+                            //    $(this).remove();  // Modal ko completely hatao taaki black background na dikhe
+                            //});
+
+                            // ✅ Submit button par class add karna
+                            $("input[type='submit']").addClass("btn newsletter-close-btn");
+                        });
+                    },
+                    error: function (xhr, status, error) {
+                        Swal.fire({
+                            icon: "error",
+                            title: "Subscription Failed",
+                            text: xhr.responseText || "Something went wrong. Please try again!",
+                        });
+                    }
+                });
+            });
+
+            function validateEmail(email) {
+                var re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                return re.test(email);
+            }
+        });
+
+
+
+    </script>
+</body>
+
+</html>
